@@ -23,10 +23,10 @@ export const Dashboard = () => {
             {
                 SongData.allSongs.map((item,i)=>{
                   return(
-                    <div className=' w-64 h-40 grid grid-rows-3 gap-2 py-5 justify-items-center items-center border-2 shadow-lg rounded-lg bg-pink-200 '>
-                          <img className=' w-28 h-28 rounded-full' src="N" alt="" />
-                          <h4 className=''>{item.title}</h4>
-                           <span onClick={()=>{setNewSong(item.title)}} className=' p-1 text-xs rounded-md bg-orange-500 font-semibold px-3 hover:bg-green-400' >Play</span>
+                    <div className=' w-64 h-40 grid grid-rows-5 gap-5  py-5 justify-items-center items-center border-2 shadow-lg rounded-lg bg-pink-200 '>
+                          <img className=' w-16 h-16 row-span-2 rounded-full  bg-purple-300' src="image/HD-wallpaper-arijit-singh-removebg-preview.png" alt="" />
+                          <h4 className='text-xs'>{item.title}</h4>
+                           <span onClick={()=>{setNewSong(item.title)}} className='  text-xs rounded-md bg-orange-500 font-semibold px-3 hover:bg-green-400' >Play</span>
                            <audio className=' w-5/6 h-4  bg-pink-300 text-purple-600' src={item.song} controls></audio>
                     </div>
                   )
