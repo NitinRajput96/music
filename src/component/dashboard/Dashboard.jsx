@@ -27,7 +27,7 @@ export const Dashboard = () => {
                           <img className=' w-28 h-28 rounded-full' src="N" alt="" />
                           <h4 className=''>{item.title}</h4>
                            <span onClick={()=>{setNewSong(item.title)}} className=' p-1 text-xs rounded-md bg-orange-500 font-semibold px-3 hover:bg-green-400' >Play</span>
-                           <audio className=' w-4/6 h-4  bg-pink-300 text-purple-600' src={item.song} controls></audio>
+                           <audio className=' w-5/6 h-4  bg-pink-300 text-purple-600' src={item.song} controls></audio>
                     </div>
                   )
                 })
