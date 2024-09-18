@@ -1,0 +1,40 @@
+{
+    "allSongs":[
+        {
+            "id":1,
+            "slug"  :"sad",
+            "title" :"Ae Dil Hai Mushkil",
+            "Singer": "Arijit Singh",
+            "img"   :"",
+            "length":4.29,
+             "song" :"/music/128-Ae Dil Hai Mushkil Title Track - Ae Dil Hai Mushkil 128 Kbps.mp3"
+        },
+        {
+            "id":2,
+            "slug"  :"sad",
+            "title" :"Agar Tu Hota",
+            "Singer": "Ankit Tiwari",
+            "img"   :"",
+            "length":5.28,
+             "song" :"/music/128-Agar Tu Hota - Baaghi 128 Kbps.mp3"
+        },
+        {
+            "id":3,
+            "slug"  :"sad",
+            "title" :"Bheege Bheege ",
+            "Singer": "Ankit Tiwari",
+            "img"   :"",
+            "length":3.40,
+             "song" :"music/128-Bheege Bheege - Amavas 128 Kbps.mp3"
+        },
+        {
+            "id":4,
+            "slug"  :"sad",
+            "title" :"Boond Boond",
+            "Singer": "Ankit Tiwari",
+            "img"   :"",
+            "length":5.21,
+             "song" :"music/128-Boond Boond - Roy 128 Kbps.mp3"
+        }
+    ]
+}
