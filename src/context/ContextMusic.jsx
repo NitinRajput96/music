@@ -4,8 +4,9 @@ import { useContext,createContext, useState } from "react";
 
  const ContextProvider=({children})=>{
         const [newSong,setNewSong]=useState()
+        const [current,setCurrent]=useState()
      return(
-      <CreateContext.Provider value={{newSong,setNewSong}}>
+      <CreateContext.Provider value={{newSong,setNewSong,current,setCurrent}}>
         {children}
       </CreateContext.Provider>
      )

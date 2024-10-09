@@ -29,50 +29,49 @@ export const MusicPlayer = () => {
             const {newSong}=useMusicCategroy()
             const [state,setState]=useState(false)
             const refrence=useRef()
+         
+
+            // const onPlay=()=>{
+                
+            // }
           
               
                 
               
           
             const runsong=(e)=>{
-              const playaudiomp=document.getElementById("musicmp");
-              playaudiomp.play()
-             
+              // const playaudiomp=document.getElementById("musicmp");
+              // playaudiomp.play()
+              refrence.current.play()
+          
              
             }
 
             const pouseaudio=()=>{
-              const playaudiomp=document.getElementById("musicmp");
-              playaudiomp.pause()
+              // const playaudiomp=document.getElementById("musicmp");
+              // playaudiomp.pause()
+              refrence.current.pause()
             }
+        
 
-            console.log();
-            
-          
-            // const playNewCate=()=>{
-            //   
-            //     else{
-            //       setState(!state)
-            //     }
-            // }
 
 
             useEffect(()=>{
-             
-            },[runsong,pouseaudio])
+              
+            },[newSong,refrence])
 
   return (
      
     <>
         {
             SongData.allSongs.filter((item)=>{
-               return item.title===newSong?item:""
+               return item.song===newSong?item:""
             }).map((mpsong,i)=>
               <div className='w-full h-[85px] max-[640px]:h-[60px] fixed grid grid-cols-4 max-[640px]:grid-cols-10  bg-black items-center bottom-0'>
          
          {/* source */}
-           <audio id='musicmp' >
-           <source ref={refrence} src={mpsong.song}  />
+           <audio   ref={refrence} autoPlay >
+                  <source  src={mpsong.song} type='audio/mp3' autoPlay />
            </audio>
            
          {/* first div */}
